@@ -66,14 +66,14 @@ color: orange;
 }
 	@media (max-width: 768px) {
 	.mimg {
-		width: 450px;
-		height: 250px;
+		width: 300px;
+		height: auto;
 	}
 	}
 	@media (min-width: 768px) {
 	.mimg {
-		width: 600px;
-		height: 400px;
+		width: 400px;
+		height: auto;
 	}
 	}
 
@@ -108,7 +108,8 @@ transition: transform 0.5s ease-in-out;
 .mimg{
 display: block;
 flex: 0 0 50%;
-width: 100%;
+width: auto;
+	max-width: 100%;
 height: auto;
 }
 .prev, .next {
