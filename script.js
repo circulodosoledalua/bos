@@ -7,8 +7,8 @@ function fazerLogin() {
 const usuariosPaginas = {
 
 	'nariel': 'nariel.html',
-	'inaie': 'inaie.html,
-	'aislin': 'aislin.html,
+	'inaie': 'inaie.html',
+	'aislin': 'aislin.html',
 };
 
 if (usuariosPaginas[username]) {
