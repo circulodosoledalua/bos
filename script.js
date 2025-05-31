@@ -44,7 +44,7 @@ document.getElementById('usuario').value.trim().toLowerCase();
 
 	if (usuario === '') {
 
-		alert ('Insira nome mágico');
+		alert ('Insira seu nome mágico');
 		return;
 	}
 
