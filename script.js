@@ -8,7 +8,7 @@ const usuariosPaginas = {
 
 	'nariel': 'nariel.html',
 	'inaie': 'inaie.html',
-	'aislin': 'aislin.html',
+	'aislimn': 'aislin.html',
 };
 
 if (usuariosPaginas[username]) {
