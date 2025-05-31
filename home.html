@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Círculo do Sol e da Lua</title>
+
+<script src="/home/pilar/Documentos/script.js" defer></script>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	
+	background: black;
+
+}	 
+
+h2 {
+color: white;
+font-size: 30px;
+font-family: serif;
+text-align: center;
+
+}
+	
+p {
+font-size: 20px;
+text-align: center;
+}
+	
+footer {
+color: white;
+text-align: center;
+}
+
+.card {
+text-align: center;
+padding: 10px;
+color: white;
+}
+
+.label {
+color: white;
+}
+
+ul {
+color: orange;
+list-style: none;
+text-align: center;
+}
+li {
+padding: 28px;
+font-size: 20px;
+border: 1px solid white;
+margin-top: 8px;
+border-radius: 8px;
+}
+
+li:hover {
+background-color:#ffc4a3; 
+}
+
+a{
+text-decoration: none;
+color: orange;
+}
+	@media (max-width: 768px) {
+	.mimg {
+		width: 450px;
+		height: 250px;
+	}
+	}
+	@media (min-width: 768px) {
+	.mimg {
+		width: 600px;
+		height: 400px;
+	}
+	}
+
+#container {
+
+margin: auto;
+width: 400px;
+height: 350px;
+padding: 56px;
+}
+
+
+#triqueta {
+text-align: center;
+}
+
+.triqueta {
+width: 100px;
+height: auto;
+}
+
+.carousel {
+position: relative;
+overflow: hidden;
+max-width: 100%;
+margin: auto;
+}
+.slides {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+.mimg{
+display: block;
+flex: 0 0 50%;
+width: 100%;
+height: auto;
+}
+.prev, .next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0, 0, 0, 0.5);
+color:white;
+font-size: 30px;
+padding: 10px;
+cursor: pointer;
+user-select: none;
+}
+.prev {
+left: 10px;
+}
+.next {
+right:10px;
+}
+
+
+
+</style>
+
+<body>
+
+
+<h2> Bem-Vindo Amados!</h2>
+
+<main>
+
+<br>
+
+<br><br>
+
+<div class="carousel"> 
+	<div class="slides">
+		<img src="/home/pilar/Imagens/samhain.jpeg" class="mimg">
+		<img src="/home/pilar/Imagens/om.png" class="mimg">
+		<img src="/home/pilar/Imagens/wicca.png" class="mimg">
+
+</div>
+
+<div class="prev">&#10094;</div>
+
+<div class="next">&#10095</div>
+
+</div>
+<div id="container">
+
+	<ul class="lista"> 
+		<li class="lista_item"><a href=""> Deusas e Deuses </a></li>
+
+		<li class="lista_item"> Preces </li>
+
+		<li class="lista_item>Ervas e cristais</li>
+
+		<li class="lista_item">Banhos mágicos </li>
+
+		<li class="lista_item"><a href="home/pilar/Documentos/wiccaverde.pdf"> Material de Estudo </a></li>
+
+</div>
+
+<div id="triqueta">
+<a href="/home/pilar/Documentos/index.html"><img src="/home/pilar/Imagens/triqueta.png" class="triqueta"></a
+</div>
+
+<center>
+<div class=card>
+<span class=card> Acesse seu Card de Contribuição</span><br>
+<label for="username">nome:</label>
+    <input type="text" id="username" required>
+   
+
+    <button onclick="fazerLogin()">Entrar</button>
+</div>
+</center>
+
+</main>
+
+<br><br>
+<footer> Círculo do Sol e da Lua</footer>
+<br>
+</body>
+
+<script>
+  const slides = document.querySelector('.slides');
+  const images = document.querySelectorAll('.slides img');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+
+  let index = 0;
+
+  function showSlide(idx) {
+    if (idx < 0) {
+      index = images.length - 1;
+    } else if (idx >= images.length) {
+      index = 0;
+    } else {
+      index = idx;
+    }
+    slides.style.transform = 'translateX(' + (-index * 100) + '%)';
+  }
+
+  prev.addEventListener('click', () => {
+    showSlide(index - 1);
+  });
+
+  next.addEventListener('click', () => {
+    showSlide(index + 1);
+  });
+
+  // Troca automática a cada 5 segundos (opcional)
+  setInterval(() => {
+    showSlide(index + 1);
+  }, 5000);</script>
+</html>
