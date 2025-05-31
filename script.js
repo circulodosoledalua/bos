@@ -6,7 +6,7 @@ function fazerLogin() {
 
 const usuariosPaginas = {
 
-	'nariel': '/home/pilar/Documentos/nariel.html',
+	'nariel': 'nariel.html',
 };
 
 if (usuariosPaginas[username]) {
