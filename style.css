@@ -1,0 +1,111 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	background: black;
+	
+	
+}
+
+p { 
+color: white;
+}
+ 
+h2 {
+color: orange;
+font-size: 30px;
+font-family: serif;
+
+}
+	
+p {
+font-size: 20px;
+text-align: center;
+}
+
+.gra {
+color: orange;
+}
+	
+footer {
+color: white;
+text-align: center;
+}
+
+#triqueta {
+text-align: center;
+}
+
+.triqueta {
+width: 100px;
+height: auto;
+}	
+	@media (max-width: 768px) {
+	.mimg {
+		widht: 450px;
+		height: 250px;
+	}
+	}
+	@media (min-width: 768px) {
+	.mimg {
+		widht: 600px;
+		height: 400px;
+	}
+	}
+
+    #triqueta {
+text-align: center;
+}
+
+.triqueta {
+width: 100px;
+height: auto;
+}
+
+.carta {
+width: 50px;
+height: auto;
+padding: 0;
+
+    justify-content: center;
+    text-align: center;
+}
+
+.ajustefoto {
+    width: 300px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.ajustefoto1 {
+	margin: 0 auto;
+}
+
+.titulo_fotos{
+    text-align: center;
+}
+
+
+.encofoto {
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+	
+	
+}
+
+ul{
+	list-style: none;
+}
+.encontros_bruxas {
+	font-size: 25px;
+	margin-left: 30px;
+	color: orange;
+
+
+}
+
+a {
+	text-decoration: none;
+}
