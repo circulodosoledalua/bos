@@ -63,12 +63,10 @@ height: auto;
 }
 
 .carta {
-width: 50px;
+width: 36px;
 height: auto;
-
-
-    justify-content: center;
-    text-align: center;
+justify-content: center;
+text-align: center;
 }
 
 .ajustefoto {
