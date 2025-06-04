@@ -8,7 +8,8 @@ const usuariosPaginas = {
 
 	'nariel': 'nariel.html',
 	'inaie': 'inaie.html',
-	'aislimn': 'aislin.html',
+	'aislimn': 'aislimn.html',
+	'aponi': '../pagamento/aponi.html',
 };
 
 if (usuariosPaginas[username]) {
@@ -35,7 +36,7 @@ window.location.href = usuariosPaginas[username];
 //Lista fixa de usuários autorizados
 
 	const
-usuariosAutorizados = ['nariel', 'inaie', 'aislimn'];
+usuariosAutorizados = ['nariel', 'inaie', 'aislimn', 'aponi'];
 
 document.getElementById('btnAcessar').addEventListener('click', function() {
 
