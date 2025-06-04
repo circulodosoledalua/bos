@@ -15,6 +15,7 @@ h2 {
 color: orange;
 font-size: 30px;
 font-family: serif;
+text-align: center;
 
 }
 	
@@ -107,3 +108,13 @@ ul{
 a {
 	text-decoration: none;
 }
+
+.estudos {
+	text-align: center;
+	margin-top: 34px;
+		
+}
+.estudos_item {
+	color: white;
+}
+
