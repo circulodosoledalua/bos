@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Círculo do Sol e da Lua</title>
+  
+   <link rel="stylesheet" href="../style.css">
+<script src="script.js" defer></script>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	
+	background: black;
+
+}	 
+
+h2 {
+color: orange;
+font-size: 30px;
+font-family: serif;
+text-align: center;
+
+}
+	
+p {
+font-size: 20px;
+text-align: center;
+}
+	
+footer {
+color: white;
+text-align: center;
+}
+
+.card {
+	jusrify-content: center;
+text-align: center;
+padding: 10px;
+color: white;
+}
+
+.label {
+color: white;
+}
+
+ul {
+color: orange;
+list-style: none;
+text-align: center;
+}
+li {
+padding: 28px;
+font-size: 20px;
+border: 1px solid white;
+margin-top: 8px;
+	margin-right: 30px;
+	margin-left: auto;
+border-radius: 8px;
+}
+
+li:hover {
+background-color:#FFF8DC; 
+}
+
+a{
+text-decoration: none;
+color: orange;
+}
+
+
+#container {
+
+margin: auto;
+width: 350px;
+height: 550px;
+Justify-content: center:
+}
+
+
+#triqueta {
+text-align: center;
+}
+
+.triqueta {
+width: 100px;
+height: auto;
+}
+
+.carousel {
+position: relative;
+overflow: hidden;
+max-width: 100%;
+margin: auto;
+align-items: center;
+}
+.slides {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+.mimg{
+display: block;
+flex: 0 0 50%;
+width: auto;
+	max-width: 100%;
+height: auto;
+}
+.prev, .next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0, 0, 0, 0.5);
+color:white;
+font-size: 30px;
+padding: 10px;
+cursor: pointer;
+user-select: none;
+}
+.prev {
+left: 10px;
+}
+.next {
+right:10px;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<h2> Bem-Vindos Amados!</h2>
+
+<main>
+
+<br>
+
+<br>
+
+<div id="container">
+
+	<ul class="lista"> 
+		<li class="lista_item"><a href=""> Deusas e Deuses </a></li>
+
+		<li class="lista_item"> Preces </li>
+
+		<li class="lista_item>Ervas e cristais</li>
+
+		<li class="lista_item">Banhos mágicos </li>
+
+		<li class="lista_item"><a href="materialestudo/wiccaverde.pdf" target="_blank"> Material de Estudo </a></li>
+
+    <li class="lista_item"><a href="encontros/encontrosfotos.html" class="encofoto"> Fotos </a> </li>
+
+ 
+    <li class="lista_item"><a href="mailto:circulodosoledalua@gmail.com"><img src="fotos/envelope.jpeg" class="carta"></a></li>
+  </ul>
+  </div>
+
+<br>
+	
+<div id="triqueta">
+<a href="index.html"><img src="fotos/triqueta.png" class="triqueta"></a
+</div>
+
+<center>
+<div class=card>
+<span> Acesse seu Card de Contribuição</span><br>
+<label for="username">nome:</label>
+    <input type="text" id="username" required>
+   
+
+    <button onclick="fazerLogin()">Entrar</button>
+</div>
+</center>
+
+</main>
+
+<br><br>
+<footer> Círculo do Sol e da Lua</footer>
+<br>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const slides = document.querySelector('.slides');
+  const images = document.querySelectorAll('.slides img');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+
+  let index = 0;
+
+  function showSlide(idx) {
+    if (idx < 0) {
+      index = images.length - 1;
+    } else if (idx >= images.length) {
+      index = 0;
+    } else {
+      index = idx;
+    }
+    slides.style.transform = 'translateX(' + (-index * 100) + '%)';
+  }
+
+  prev.addEventListener('click', () => {
+    showSlide(index - 1);
+  });
+
+  next.addEventListener('click', () => {
+    showSlide(index + 1);
+  });
+
+  // Troca automática a cada 5 segundos (opcional)
+  setInterval(() => {
+    showSlide(index + 1);
+  }, 5000);</script>
+</html>
