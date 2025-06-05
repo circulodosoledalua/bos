@@ -118,3 +118,56 @@ a {
 	color: white;
 }
 
+.grid-container-sabas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-area: 
+    "sabas_item1 sabas_item2";
+  
+
+    grid-template-rows: auto;
+    gap: 10px;
+
+   
+}
+
+.sabas_item1{
+	grid-area: sabas_item1;
+	text-align: center;
+}
+
+
+.sabas_item2 {
+	
+	grid-area: sabas_item2;
+	text-align: center;
+}
+
+
+.sabas-imagem {
+	width: 300px;
+	height: auto;
+	margin: 16px auto;
+	
+}
+
+.samahain25 {
+	padding: 16px;
+}
+
+@media (max-width: 600px) {
+	.grid-container-sabas {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"sabas_item1"
+		"sabas_item2";
+	}
+	.sabas-imagem {
+		width: 200px;
+		height: auto;
+		margin: 16px auto;
+		display: block;
+	}
+}
+
