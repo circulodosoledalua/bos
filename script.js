@@ -67,4 +67,21 @@ localStorage.setItem('usuarioAutenticado', usuario);
 });
 
 
+function buscarH3() {
+  const termo = document.getElementById("buscaH3").value.toLowerCase();
+  const h3s = document.querySelectorAll("h3");
+
+  let encontrou = false;
+
+  h3s.forEach(h3 => {
+    h3.classList.remove("highlight");
+    if (h3.textContent.toLowerCase().includes(termo)) {
+      h3.classList.add("highlight");
+      if (!encontrou) {
+        h3.scrollIntoView({ behavior: "smooth", block: "center" });
+        encontrou = true;
+      }
+    }
+  });
+}
 

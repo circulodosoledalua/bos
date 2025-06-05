@@ -230,4 +230,77 @@ margin: 16px auto;
 	width: 80%;
 	margin: 0 auto;
 	text-align: center;
-}}
+}
+
+
+}
+/*apaguei o campo de busca até entender o problema*/
+.buscarH3 {
+	display: none;
+}
+.encontros_bruxas a {
+	color:wheat;
+	text-decoration: none;
+}
+.amados  {
+	margin-top: 50px;
+}
+
+
+/* botão de busca que o js nao funciona ou o html nao sei.
+nav {
+	display: flex;
+	justify-content: center;
+gap: 10px;}
+
+input {
+	padding: 8px;
+	width: 250px;
+}
+button {
+	cursor: pointer
+}*/
+
+
+.main-cristais {
+	width: 80%;
+	margin: 0 auto;
+}
+
+h3 {
+	color: orange;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 20px;
+}
+.ajuste-cristal {
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+.grid-container-cristais {
+    display: grid;
+    grid-template-columns: 20% 25% 1fr;
+    grid-area: 
+    "cris1 texto_cris1"
+    "cris2 texto_cris2";
+
+    grid-template-rows: auto;
+    gap: 10px;
+}
+@media (max-width: 600px) {
+	.grid-container-cristais {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"cris1"
+		"texto_cris1"
+		"cris2"
+		"texto_cris2";
+	}
+.texto_cris1 {
+	width: 80%;
+	margin: 10px auto;
+}
+}
