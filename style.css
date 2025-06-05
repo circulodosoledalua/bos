@@ -6,6 +6,12 @@ body {
 	
 	
 }
+.merienda-<uniquifier> {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 p { 
 color: white;
@@ -14,7 +20,7 @@ color: white;
 h2 {
 color: orange;
 font-size: 30px;
-font-family: serif;
+font-family: "Merienda";
 text-align: center;
 
 }
@@ -118,32 +124,24 @@ a {
 	color: white;
 }
 
+
 .grid-container-sabas {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    grid-area: 
-    "sabas_item1 sabas_item2";
-  
+    grid-template-columns: repeat(2, 1fr);
+    
+	grid-area: 
+    "sabas_item1 sabas_item2"
+	"sabas_item3 sabas_item4"
+	"sabas_item5 sabas_item6"
+	"sabas_item7 sabas_item8";
+    
 
     grid-template-rows: auto;
     gap: 10px;
 
-   
-}
-
-.sabas_item1{
-	grid-area: sabas_item1;
+    margin-top: 40px;
 	text-align: center;
 }
-
-
-.sabas_item2 {
-	
-	grid-area: sabas_item2;
-	text-align: center;
-}
-
 
 .sabas-imagem {
 	width: 300px;
@@ -159,9 +157,7 @@ a {
 @media (max-width: 600px) {
 	.grid-container-sabas {
 		grid-template-columns: 1fr;
-		grid-template-areas: 
-		"sabas_item1"
-		"sabas_item2";
+		
 	}
 	.sabas-imagem {
 		width: 200px;
@@ -171,3 +167,49 @@ a {
 	}
 }
 
+
+.grid-container-ervascris {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: 
+    "fotos_cristais texto_cristais"
+    ;
+
+    grid-template-rows: auto;
+    gap: 10px;
+
+    margin-top: 50px;
+}
+.fotos_cristais {
+margin: 16px auto;
+    padding: 8px;
+}
+.ervas {
+	text-align: center;;
+}
+
+.cristal {
+	text-align: center;;
+}
+.main-ervascris {
+	padding: 16px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+	.grid-container-ervascris {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"fotos_cristais"
+		"fotos_cristais";
+	}
+	.fotos_cristais {
+		width: 200px;
+		height: auto;
+		margin: 16px auto;
+		display: block;
+		text-align: center;
+	}
+
+}
