@@ -168,6 +168,7 @@ a {
 }
 
 
+
 .grid-container-ervascris {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -210,8 +211,7 @@ margin: 16px auto;
 		"fotos_cristais";
 	}
 	.fotos_cristais {
-		width: 200px;
-		height: auto;
+		
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -220,11 +220,14 @@ margin: 16px auto;
 
 		height: auto;
 		margin: 16PX auto;
-	text-align: center;;
+		
 	}
 	.ervas {
 		width: 250px;
 		height: auto;
-		margin: 0 auto;	
-
-}
+	}ain-ervascris {
+	padding: 16px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}}
