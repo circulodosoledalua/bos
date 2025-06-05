@@ -183,9 +183,11 @@ a {
 .fotos_cristais {
 margin: 16px auto;
     padding: 8px;
+	
 }
 .ervas {
-	text-align: center;;
+	text-align: center;
+	width: 300px;
 }
 
 .cristal {
@@ -196,6 +198,7 @@ margin: 16px auto;
 	padding: 16px;
 	width: 80%;
 	margin: 0 auto;
+	text-align: center;
 }
 
 
@@ -209,14 +212,19 @@ margin: 16px auto;
 	.fotos_cristais {
 		width: 200px;
 		height: auto;
-		
+		margin: 0 auto;
 		text-align: center;
 	}
 	.cristal {
 		width: 250px;
+
 		height: auto;
-		margin: 0 auto;
+		margin: 16PX auto;
 	text-align: center;;
 	}
+	.ervas {
+		width: 250px;
+		height: auto;
+		margin: 0 auto;	
 
 }
