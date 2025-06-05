@@ -189,13 +189,15 @@ margin: 16px auto;
 }
 
 .cristal {
-	text-align: center;;
+	text-align: center;
+	width: 300px;
 }
 .main-ervascris {
 	padding: 16px;
 	width: 80%;
 	margin: 0 auto;
 }
+
 
 @media (max-width: 600px) {
 	.grid-container-ervascris {
@@ -207,9 +209,14 @@ margin: 16px auto;
 	.fotos_cristais {
 		width: 200px;
 		height: auto;
-		margin: 16px auto;
-		display: block;
+		
 		text-align: center;
+	}
+	.cristal {
+		width: 250px;
+		height: auto;
+		margin: 0 auto;
+	text-align: center;;
 	}
 
 }
