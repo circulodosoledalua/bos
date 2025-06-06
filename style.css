@@ -304,3 +304,24 @@ h3 {
 	margin: 10px auto;
 }
 }
+
+.sortedodia {
+	margin-top: 60px;
+}
+
+.sorte {
+	width: 200px;
+	height: auto;
+	margin: 10px auto;
+	display: block;
+	margin-bottom: 100px;
+}
+
+.foopreto {
+	color: black;
+}
+
+h4 {
+	font-family: "Merienda", cursive;
+	color: black
+}

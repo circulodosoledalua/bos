@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+#container-oraculo {
+    width: 300px;
+    margin: 0 auto;
+    display:block;
+}
+
+img {
+    width: 300px;
+    margin: 20px auto;
+    margin-bottom: 14px;
+}
+button {
+    margin: 12px auto;
+    display: block;
+    background-color: #E6E6FA;
+    border: 1px solid #9370DB;
+    border-radius: 3px;
+    margin-bottom: 36px;
+    padding: 8px;
+}
