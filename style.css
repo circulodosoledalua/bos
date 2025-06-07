@@ -305,6 +305,12 @@ h3 {
 }
 }
 
+.texto-deuses {
+	width: 85%;
+	margin: 10px auto;
+	text-align: center;
+}
+
 .sortedodia {
 	margin-top: 60px;
 }
