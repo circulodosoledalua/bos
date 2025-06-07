@@ -314,7 +314,7 @@ h3 {
 	height: auto;
 	margin: 10px auto;
 	display: block;
-	margin-bottom: 100px;
+	margin-bottom: 36px;
 }
 
 .foopreto {
@@ -324,4 +324,8 @@ h3 {
 h4 {
 	font-family: "Merienda", cursive;
 	color: black
+}
+
+hr {
+	width: 80%;
 }
