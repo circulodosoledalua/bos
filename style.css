@@ -374,3 +374,9 @@ hr {
 	width: 80%;
 	margin: 16px auto;
 }
+.fotos-bruxos {
+	width: 300px;
+	height: auto;
+	margin: 16px auto;
+	display:block;
+}
