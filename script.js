@@ -6,10 +6,11 @@ function fazerLogin() {
 
 const usuariosPaginas = {
 
-	'nariel': 'nariel.html',
-	'inaie': 'inaie.html',
-	'aislimn': 'aislimn.html',
-	'aponi': '../pagamento/aponi.html',
+	'nariel1308': '../drive/driveindex.html',
+	'inaie':'../drive/driveindex.html',
+	'aislimn': '../drive/driveindex.html',
+	'aponi': '../drive/driveindex.html',
+	'adarah': '../drive/driveindex.html',
 };
 
 if (usuariosPaginas[username]) {

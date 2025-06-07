@@ -396,3 +396,11 @@ hr {
 	margin: 16px auto;
 	display:block;
 }
+
+h1, .drive  {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	color:bisque;
+	margin-bottom: 24px;
+}
