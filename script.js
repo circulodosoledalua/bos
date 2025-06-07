@@ -67,21 +67,38 @@ localStorage.setItem('usuarioAutenticado', usuario);
 });
 
 
-function buscarH3() {
-  const termo = document.getElementById("buscaH3").value.toLowerCase();
-  const h3s = document.querySelectorAll("h3");
 
-  let encontrou = false;
+//  busca dos cristais 
 
-  h3s.forEach(h3 => {
-    h3.classList.remove("highlight");
-    if (h3.textContent.toLowerCase().includes(termo)) {
-      h3.classList.add("highlight");
-      if (!encontrou) {
-        h3.scrollIntoView({ behavior: "smooth", block: "center" });
-        encontrou = true;
-      }
-    }
-  });
+function buscarCristal() {
+  const termo = document.getElementById("buscaInput").value.toLowerCase();
+  const ids = ["cristal", "ametista", "citrino", "onix"];
+
+  const encontrado = 
+  ids.find(id => id.toLowerCase().includes(termo));
+
+  if (encontrado){
+
+	document.getElementById(encontrado).scrollIntoView({behavior: 'smooth'});
+  } else {
+	alert("Pedra não encontrada");
+  }
 }
 
+
+// busca para as ervas agora
+
+function buscarErva() {
+	const termo =
+	document.getElementById("buscaInput").value.toLowerCase();
+
+	const ids = ["mirra", "camomila", "hortelã"];
+
+	const encontrado = ids.find(id => id.includes(termo));
+
+	if (encontrado) {
+		document.getElementById(encontrado).scrollIntoView({behavior: 'smooth'});
+	} else {
+		alert("Erva não encontrada");
+	}
+	}
