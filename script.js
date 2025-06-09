@@ -12,6 +12,7 @@ const usuariosPaginas = {
 	'aponi': 'bos/drive/driveindex.html',
 	'adarah': 'bos/drive/driveindex.html',
 	'vida0514': 'bos/drive/driveindex.html',
+	'tica': 'bos/drive/driveindex.html',
 };
 
 if (usuariosPaginas[username]) {
