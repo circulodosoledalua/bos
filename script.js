@@ -39,7 +39,7 @@ window.location.href = usuariosPaginas[username];
 //Lista fixa de usuários autorizados
 
 	const
-usuariosAutorizados = ['nariel', 'inaie', 'aislimn', 'aponi', 'vida', 'adarah'];
+usuariosAutorizados = ['nariel', 'inaie', 'aislimn', 'aponi', 'vida', 'adarah', 'tica'];
 
 document.getElementById('btnAcessar').addEventListener('click', function() {
 
