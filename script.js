@@ -6,7 +6,7 @@ function fazerLogin() {
 
 const usuariosPaginas = {
 
-	'nariel1308': '../drive/driveindex.html',
+	'nariel1308': 'bos//drive/driveindex.html',
 	'inaie7':'drive/driveindex.html',
 	'aislimn26': 'drive/driveindex.html',
 	'aponi': 'drive/driveindex.html',
