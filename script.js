@@ -6,13 +6,13 @@ function fazerLogin() {
 
 const usuariosPaginas = {
 
-	'nariel1308': 'bos/drive/driveindex.html',
-	'inaie7':'bos/drive/driveindex.html',
-	'aislimn26': 'bos/drive/driveindex.html',
-	'aponi': 'bos/drive/driveindex.html',
-	'adarah': 'bos/drive/driveindex.html',
-	'vida0514': 'bos/drive/driveindex.html',
-	'tica': 'bos/drive/driveindex.html',
+	'nariel1308': 'drive/driveindex.html',
+	'inaie7':'drive/driveindex.html',
+	'aislimn26': 'drive/driveindex.html',
+	'aponi': 'drive/driveindex.html',
+	'adarah': 'drive/driveindex.html',
+	'vida0514': 'drive/driveindex.html',
+	'tica': 'drive/driveindex.html',
 };
 
 if (usuariosPaginas[username]) {
